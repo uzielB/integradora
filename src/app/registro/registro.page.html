@@ -1,0 +1,38 @@
+<app-header titulo="UTVCO"></app-header>
+
+<ion-content class="ion-padding">
+  <div class="ion-text-center">
+    <ion-card color="secondary" class="custom-card">
+      <ion-card-header >
+        <ion-card-title>Registrar nueva tutoria</ion-card-title>
+      </ion-card-header>
+
+      <ion-card-content class="custom-card-content">
+        <ion-item  color="secondary">
+          <ion-label position="floating">Nombre tutor</ion-label>
+          <ion-input type="text" [(ngModel)]="nombreTutor"></ion-input>
+        </ion-item>
+
+        <ion-item  color="secondary">
+          <ion-label position="floating">Área</ion-label>
+          <ion-input type="text" [(ngModel)]="area"></ion-input>
+        </ion-item>
+
+        <ion-item  color="secondary">
+          <ion-label position="floating">Nombre del instructor</ion-label>
+          <ion-input type="text" [(ngModel)]="nombreInstructor"></ion-input>
+        </ion-item>
+
+        <ion-item color="secondary">
+          <ion-label position="floating">Horario</ion-label>
+          <ion-input type="text" [(ngModel)]="horario"></ion-input>
+        </ion-item>
+<br>
+<br>
+        <ion-button expand="end" color="tertiary" (click)="registrar()">Registrar</ion-button>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>
+
+

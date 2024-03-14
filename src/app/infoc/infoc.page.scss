@@ -1,0 +1,24 @@
+.img {
+    width: 400px; /* Ajusta el ancho de la imagen */
+    height: auto; /* Esto mantendrá la proporción de la imagen */
+  }
+
+  .contenedor-informacion {
+    display: flex;
+    align-items: center; /* Alinea los elementos verticalmente */
+  }
+  
+  .contenedor-imagen {
+    flex: 0 0 auto; /* Permite que el contenedor de la imagen no crezca */
+    margin-right: 16px; /* Margen derecho para separar la imagen del texto */
+  }
+  
+  .contenedor-texto {
+    flex: 1; /* El contenedor de texto ocupa el espacio restante */
+  }
+  
+  ion-button {
+    margin-top: 16px; /* Espacio superior para separar los botones de la información */
+  }
+  
+  
