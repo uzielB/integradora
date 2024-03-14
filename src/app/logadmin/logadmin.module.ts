@@ -7,13 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { LogadminPageRoutingModule } from './logadmin-routing.module';
 
 import { LogadminPage } from './logadmin.page';
+import { ComponentsModule } from '../components.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    LogadminPageRoutingModule
+    LogadminPageRoutingModule,
+    ComponentsModule
   ],
   declarations: [LogadminPage]
 })

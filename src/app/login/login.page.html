@@ -5,20 +5,20 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-    <ion-card class="card-container">
-      <ion-grid fixed>
-        <ion-row>
-          <ion-col class="ion-text-center">
-            <ion-button class="btn1" onclick="logadmin()">Administrador</ion-button>
-          </ion-col>
-        </ion-row>
-        <ion-row>
-          <ion-col class="ion-text-center">
-            <ion-button class="btn1" onclick="logusuario()">Estudiante</ion-button>
-          </ion-col>
-        </ion-row>
-      </ion-grid>
-    </ion-card>
+  <ion-card class="card-container">
+    <ion-grid fixed>
+      <ion-row>
+        <ion-col class="ion-text-center">
+          <ion-button class="btn1" (click)="redirectToAdmin()">Administrador</ion-button>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col class="ion-text-center">
+          <ion-button class="btn1" (click)="redirectToUser()">Estudiante</ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-card>
 </ion-content>
 
 
