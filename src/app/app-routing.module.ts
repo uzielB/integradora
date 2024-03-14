@@ -14,7 +14,7 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'login',
     pathMatch: 'full'
   },
   {
@@ -37,7 +37,19 @@ const routes: Routes = [
     path: 'infod',
     loadChildren: () => import('./infod/infod.module').then( m => m.InfodPageModule)
   },
- 
+  {
+    path: 'login',
+    loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
+  },
+  {
+    path: 'logusuario',
+    loadChildren: () => import('./logusuario/logusuario.module').then( m => m.LogusuarioPageModule)
+  },
+  {
+    path: 'logadmin',
+    loadChildren: () => import('./logadmin/logadmin.module').then( m => m.LogadminPageModule)
+  },
+
 ];
 
 @NgModule({
