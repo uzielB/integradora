@@ -1,5 +1,4 @@
-import { Component } from '@angular/core';
-
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-home',
@@ -8,12 +7,18 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-  imagenes: string[] = [
-    'assets/d.jpg', // Ruta de la imagen para Deportivas
-    'assets/c.jpg'  // Ruta de la imagen para Culturales
+  imagenes = [
+    { url: 'URL_IMAGEN_1' },
+    { url: 'URL_IMAGEN_2' },
+    // Agrega más imágenes según sea necesario
   ];
 
-  constructor() {}
+  carouselOptions = {
+    slidesPerView: 'auto',
+    // Otras opciones de configuración aquí
+  };
 
+  constructor() { }
 
 }
+
