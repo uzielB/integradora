@@ -49,6 +49,10 @@ const routes: Routes = [
     path: 'logadmin',
     loadChildren: () => import('./logadmin/logadmin.module').then( m => m.LogadminPageModule)
   },
+  {
+    path: 'registro-a',
+    loadChildren: () => import('./registro-a/registro-a.module').then( m => m.RegistroAPageModule)
+  },
 
 ];
 

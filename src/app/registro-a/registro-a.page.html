@@ -7,10 +7,11 @@
   </ion-toolbar>
 </ion-header>
 
+
 <ion-content [fullscreen]="true">
   <ion-card class="card-login">
     <ion-card-content>
-      <ion-card-title class="title">Estudiante</ion-card-title>
+      <ion-card-title class="title">Crear Cuenta</ion-card-title>
       <img src="assets/usuario.png" alt="" class="img">
       <ion-item>
         <ion-label position="floating" class="campos">Usuario</ion-label>
@@ -20,12 +21,22 @@
         <ion-label position="floating" class="campos">Contraseña</ion-label>
         <ion-input type="password"></ion-input>
       </ion-item>
+      <ion-item>
+        <ion-label position="floating" class="campos">Matricula</ion-label>
+        <ion-input type="text"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating" class="campos">Carrera</ion-label>
+        <ion-input type="text"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating" class="campos">Grupo</ion-label>
+        <ion-input type="text"></ion-input>
+      </ion-item>
       <br>
       <br>
-      <ion-button expand="full" color="primary">Iniciar sesión</ion-button>
-      <ion-button expand="full" color="success" (click)="crearCuenta()">Crear Cuenta</ion-button>
+      <ion-button expand="full" color="primary" (click)="crear()">Crear</ion-button>
 
     </ion-card-content>
   </ion-card>
 </ion-content>
-
