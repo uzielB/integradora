@@ -1,31 +1,33 @@
 <app-header titulo="UTVCO"></app-header>
 
 <ion-content class="ion-padding">
-  <ion-card color="secondary">
+
+  <ion-card>
+    <div class="imagen">
+      <ion-img [src]="imagenSeleccionada" alt="Imagen Seleccionada" class="img"></ion-img>
+    </div>
+  </ion-card>
+
+  <ion-card color="secondary" >
     <ion-card-content>
       <!-- Contenedor principal de la información -->
       <div class="contenedor-informacion">
         <!-- Contenedor de la imagen -->
-        <div class="contenedor-imagen">
-          <ion-img [src]="imagenSeleccionada" alt="Imagen Seleccionada" class="img"></ion-img>
-        </div>
+
         <!-- Contenedor del texto -->
         <div class="contenedor-texto">
-          <ion-card-title>Objetivo de las tutorías:</ion-card-title>
+          <ion-card-title>Tutoria</ion-card-title>
           <ion-card-subtitle>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam culpa
-             minima cum voluptatibus vero quidem veniam aperiam libero neque. 
-             Mollitia rerum aut recusandae? Ab et, reprehenderit nisi molestiae 
-             veniam cum! Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Quis dolor, ipsa laborum sequi esse culpa ullam modi deleniti? Iste dolor
-               perspiciatis totam esse corrupti neque optio, deserunt velit qui atque.
+           Dicha tutoria es realizada en base a lo cultural,
+           tomando como punto de partida oracticas y habilidades de cada
+           alumno inscrito en dicha tutoria, para fortalecer y mejorar sus habilidades
           </ion-card-subtitle>
           <!-- Botones -->
       <ion-button expand="end">Ver horarios</ion-button>
       <ion-button expand="end">Inscribirte</ion-button>
         </div>
       </div>
-      
+
     </ion-card-content>
   </ion-card>
 </ion-content>
