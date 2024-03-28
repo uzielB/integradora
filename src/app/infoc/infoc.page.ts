@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router, ActivatedRoute } from '@angular/router'; 
+import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-infoc',
@@ -10,12 +10,16 @@ export class InfocPage implements OnInit {
 
   imagenSeleccionada: string = '';
 
-  constructor(private router: Router, private route: ActivatedRoute) { } 
+  constructor(private router: Router, private route: ActivatedRoute) { }
 
   ngOnInit() {
     this.route.queryParams.subscribe(params => {
       this.imagenSeleccionada = params['imagen'];
     });
+  }
+
+  inscribir(){
+    this.router.navigate(['/inscribirse']);
   }
 
 }
