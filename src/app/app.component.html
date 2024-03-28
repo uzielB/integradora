@@ -10,9 +10,11 @@
   </ion-header>
   <ion-content>
     <ion-list>
-      <ion-item routerLink="/home">Pagina Principal</ion-item>
-      <ion-item routerLink="/deportiva">Tutorias Deportivas</ion-item>
-      <ion-item routerLink="/cultural">Tutoruas Culturales</ion-item>
+      <ion-item (click)="closeMenu()" routerLink="/home">Pagina Principal</ion-item>
+      <ion-item (click)="closeMenu()" routerLink="/deportiva">Tutorias Deportivas</ion-item>
+      <ion-item (click)="closeMenu()" routerLink="/cultural">Tutoruas Culturales</ion-item>
+      <ion-item (click)="closeMenu()" routerLink="/login">Cerrar Sesión</ion-item>
+
     </ion-list>
   </ion-content>
 </ion-menu>
