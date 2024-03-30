@@ -10,12 +10,16 @@ export class InfodPage implements OnInit {
 
   imagenSeleccionada: string = '';
 
-  constructor(private router: Router, private route: ActivatedRoute) { } 
+  constructor(private router: Router, private route: ActivatedRoute) { }
 
   ngOnInit() {
     this.route.queryParams.subscribe(params => {
       this.imagenSeleccionada = params['imagen'];
     });
+  }
+
+  inscribir(){
+    this.router.navigate(['/inscribirse']);
   }
 
 }

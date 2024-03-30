@@ -57,6 +57,10 @@ const routes: Routes = [
     path: 'inscribirse',
     loadChildren: () => import('./inscribirse/inscribirse.module').then( m => m.InscribirsePageModule)
   },
+  {
+    path: 'horarios',
+    loadChildren: () => import('./horarios/horarios.module').then( m => m.HorariosPageModule)
+  },
 
 ];
 
