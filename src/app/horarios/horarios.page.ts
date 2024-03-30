@@ -6,10 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./horarios.page.scss'],
 })
 export class HorariosPage implements OnInit {
-
+  [x: string]: any;
   constructor() { }
-
-  
 
   ngOnInit() {
   }
