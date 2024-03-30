@@ -16,7 +16,7 @@ export class InscribirsePage {
 async enviar(){
 
     this.Router.navigate(['/horarios'])
-   
+
   const alert = await this.alertCtrl.create({
     message:'Registro Exitoso',
     buttons:['OK']

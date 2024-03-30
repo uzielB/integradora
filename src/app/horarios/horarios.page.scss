@@ -9,3 +9,15 @@
 .ion-text-center{
   font-size:larger;
 }
+
+.div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+.boton {
+  width: 50%; /* Ancho del botón */
+  text-align: center;
+}
