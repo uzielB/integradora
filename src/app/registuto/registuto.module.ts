@@ -7,13 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { RegistutoPageRoutingModule } from './registuto-routing.module';
 
 import { RegistutoPage } from './registuto.page';
+import { ComponentsModule } from '../components.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    RegistutoPageRoutingModule
+    RegistutoPageRoutingModule,
+    ComponentsModule
   ],
   declarations: [RegistutoPage]
 })

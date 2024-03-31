@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { AlertController } from '@ionic/angular';
 
 @Component({
   selector: 'app-registuto',
@@ -7,7 +9,31 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RegistutoPage implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router, private alertCtrl: AlertController) { }
+
+
+  async crear(){
+
+    const alert = await this.alertCtrl.create({
+      header: 'Mi primer alert',
+      backdropDismiss: false,
+      message: 'Aaaaaaaaaaaaaaaaaaaa',
+      buttons: [
+        {
+          text: 'Aceptar',
+          role: 'confirm'
+        },
+        {
+          text: 'Cancelar',
+          role: 'destructive'
+        },
+      ]
+    });
+
+    await alert.present();
+    this.router.navigate(['tutoadmin']);
+  }
+
 
   ngOnInit() {
   }

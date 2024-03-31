@@ -27,6 +27,28 @@
   </ion-content>
 </ion-menu>
 
+<ion-menu side="start" menuId="menu" contentId="main-content">
+  <ion-header>
+    <ion-toolbar color="primary">
+      <ion-title>Menú</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-list>
+      <br>
+      <br>
+      <ion-item (click)="closeMenu()" routerLink="/tutoadmin">Pagina Principal</ion-item>
+      <br>
+      <br>
+      <ion-item (click)="closeMenu()" routerLink="/registuto">Registrar Tutoria</ion-item>
+      <br>
+      <br>
+      <ion-item (click)="closeMenu()" routerLink="/login">Cerrar Sesión</ion-item>
+
+    </ion-list>
+  </ion-content>
+</ion-menu>
+
 <ion-router-outlet id="main-content"></ion-router-outlet>
 
 

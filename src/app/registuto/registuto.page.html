@@ -1,13 +1,53 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>registuto</ion-title>
-  </ion-toolbar>
-</ion-header>
+<app-menuadmin titulo="UTVCO"></app-menuadmin>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">registuto</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-card class="card-login">
+    <ion-card-content>
+      <ion-card-title class="title">Registrar Tutoria</ion-card-title>
+
+      <ion-item>
+        <ion-label position="floating" class="campos">Nombre de la Tutoria</ion-label>
+        <ion-input type="text"></ion-input>
+      </ion-item>
+        
+        <br>
+      <ion-list>
+        <ion-item>
+          <ion-label>Tipo</ion-label>
+          <ion-select value="Deportiva" multiple="true" placeholder="Select">
+            <ion-select-option value="deportiva">DEPORTIVA</ion-select-option>
+            <ion-select-option value="cultural">CULTURAL</ion-select-option>
+          </ion-select>
+        </ion-item>
+      </ion-list>
+        <br>
+        <br>
+      <ion-list>
+        <ion-item>
+          <ion-label>Días de Impartirla</ion-label>
+          <ion-select value="DÍAS" multiple="true" placeholder="Select">
+            <ion-select-option value="lunes">LUNES</ion-select-option>
+            <ion-select-option value="martes">MARTES</ion-select-option>
+            <ion-select-option value="miercoles">MIERCOLES</ion-select-option>
+            <ion-select-option value="jueves">JUEVES</ion-select-option>
+            <ion-select-option value="viernes">VIERNES</ion-select-option>
+          </ion-select>
+        </ion-item>
+      </ion-list>
+
+      <ion-item>
+        <ion-label position="floating" class="campos">Total de alumnos</ion-label>
+        <ion-input type="number"></ion-input>
+      </ion-item>
+      <ion-item>
+
+        <ion-label position="floating" class="campos">FOTO</ion-label>
+        <ion-input type="text"></ion-input>
+      </ion-item>
+      <br>
+      <br>
+      <ion-button expand="full" color="primary" (click)="crear()">ACEPTAR</ion-button>
+
+    </ion-card-content>
+  </ion-card>
 </ion-content>
