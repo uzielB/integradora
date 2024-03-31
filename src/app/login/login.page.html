@@ -1,19 +1,32 @@
-<<ion-header [translucent]="true">
+<ion-header [translucent]="true">
   <ion-toolbar color="primary" class="ion-text-center">
     <ion-title>UTVCO</ion-title>
+    <ion-buttons slot="end">
+      <img src="./assets/logo.jpg" alt="Logo" style="height: 40px;"> <!-- Ajusta la altura según sea necesario -->
+    </ion-buttons>
   </ion-toolbar>
-</ion-header>>
+</ion-header>
+
+<br>
+<br>
+<br>
 
 <ion-content [fullscreen]="true">
   <ion-card class="card-container">
     <ion-grid fixed>
       <ion-row>
         <ion-col class="ion-text-center">
+          <img src="./assets/profesor.png" alt="">
+          <br>
           <ion-button class="btn1" (click)="redirectToAdmin()">Administrador</ion-button>
         </ion-col>
       </ion-row>
+
+
       <ion-row>
         <ion-col class="ion-text-center">
+          <img src="./assets/graduado.png" alt="">
+          <br>
           <ion-button class="btn1" (click)="redirectToUser()">Estudiante</ion-button>
         </ion-col>
       </ion-row>
