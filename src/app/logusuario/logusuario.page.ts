@@ -14,6 +14,10 @@ export class LogusuarioPage implements OnInit {
     this.Router.navigate(['/registro-a']);
   }
 
+  ingresar(){
+    this.Router.navigate(['home']);
+  }
+
   ngOnInit() {
   }
 

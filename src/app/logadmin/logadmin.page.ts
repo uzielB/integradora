@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-logadmin',
@@ -8,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 export class LogadminPage implements OnInit {
   nombreTutor: string = '';
   contraseña: string = '';
-  constructor() { }
+  constructor(private Router: Router) { }
 
 
 
@@ -18,7 +19,10 @@ export class LogadminPage implements OnInit {
     // Aquí puedes agregar la lógica para registrar los datos ingresados
     console.log("Nombre tutor:", this.nombreTutor);
     console.log("Contraseña:", this.contraseña);
+  }
 
+  ingresar(){
+    this.Router.navigate(['/tutoadmin']);
   }
 
 }

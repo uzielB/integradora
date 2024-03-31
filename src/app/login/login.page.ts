@@ -11,11 +11,11 @@ export class LoginPage implements OnInit {
   constructor(private Router: Router) { }
 
   redirectToAdmin() {
-    this.Router.navigate(['/logadmin']); // Reemplaza '/logadmin' con la ruta real a tu página logadmin
+    this.Router.navigate(['/logadmin']);
   }
 
   redirectToUser() {
-    this.Router.navigate(['/logusuario']); // Reemplaza '/logusuario' con la ruta real a tu página logusuario
+    this.Router.navigate(['/logusuario']); 
   }
 
   ngOnInit() {

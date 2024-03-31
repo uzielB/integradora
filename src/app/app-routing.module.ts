@@ -61,6 +61,14 @@ const routes: Routes = [
     path: 'horarios',
     loadChildren: () => import('./horarios/horarios.module').then( m => m.HorariosPageModule)
   },
+  {
+    path: 'tutoadmin',
+    loadChildren: () => import('./tutoadmin/tutoadmin.module').then( m => m.TutoadminPageModule)
+  },
+  {
+    path: 'registuto',
+    loadChildren: () => import('./registuto/registuto.module').then( m => m.RegistutoPageModule)
+  },
 
 ];
 
